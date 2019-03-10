@@ -7,4 +7,6 @@
     <string name="duracion">Duración</string>
     <string name="texto">Texto</string>
     <string name="apartado">Apartado</string>
+    <string name="inicia">Inicia</string>
+    <string name="termina">Termina</string>
 </resources>

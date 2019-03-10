@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import co.com.geosat.ceez.model.Sesion
+import de.hdodenhof.circleimageview.CircleImageView
 import kotlinx.android.synthetic.main.sesion_adapter.view.*
 
 class SesionAdapter (var items: ArrayList<Sesion>?): RecyclerView.Adapter<SesionAdapter.ViewHolder>() {
@@ -22,10 +23,13 @@ class SesionAdapter (var items: ArrayList<Sesion>?): RecyclerView.Adapter<Sesion
         val item = items?.get(p1)
         holder.textViewNombre?.text = item?.nombre
         holder.textViewTipo?.text = item?.tipo
-        holder.textViewHora?.text = item?.hora
-        holder.textViewDuracion?.text = item?.duracion
-        holder.textViewTexto?.text = item?.texto
-        holder.textViewApartado?.text = item?.apartado
+        holder.textViewHorario?.text = "${item?.inicia} a ${item?.termina}"
+        when (item?.codigo) {
+            1 -> holder.circleImageViewIcon?.setImageResource(R.drawable.el_capital)
+            2 -> holder.circleImageViewIcon?.setImageResource(R.drawable.ser_lenguaje)
+            3 -> holder.circleImageViewIcon?.setImageResource(R.drawable.quijote)
+            4 -> holder.circleImageViewIcon?.setImageResource(R.drawable.estanislao_zuleta)
+        }
 
         holder.cardViewSesion?.setOnClickListener {
             Toast.makeText(it.context,"Item is clicked", Toast.LENGTH_SHORT).show()
@@ -37,19 +41,16 @@ class SesionAdapter (var items: ArrayList<Sesion>?): RecyclerView.Adapter<Sesion
         var cardViewSesion: CardView? = null
         var textViewNombre: TextView? = null
         var textViewTipo: TextView? = null
-        var textViewHora: TextView? = null
-        var textViewDuracion: TextView? = null
-        var textViewTexto: TextView? = null
-        var textViewApartado: TextView? = null
+        var textViewHorario: TextView? = null
+        var circleImageViewIcon: CircleImageView? = null
 
         init {
             this.cardViewSesion = view.cardViewSesion
             this.textViewNombre = view.textViewNombre
             this.textViewTipo = view.textViewTipo
-            this.textViewHora = view.textViewHora
-            this.textViewDuracion = view.textViewDuracion
-            this.textViewTexto = view.textViewTexto
-            this.textViewApartado = view.textViewApartado
+            this.textViewHorario = view.textViewHorario
+            this.circleImageViewIcon = view.circleImageViewIcon
+
         }
 
 

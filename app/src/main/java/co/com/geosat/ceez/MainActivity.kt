@@ -24,60 +24,68 @@ class MainActivity : AppCompatActivity() {
         expositoresQuijote?.add("Andrés Galeano")
 
         sesiones = ArrayList()
-        sesiones?.add(Sesion(
-            "Leer el Capital",
-            "Seminario",
-            "8:00 am",
-            "1 hora y media",
-            "El Capital",
-            "Sección cuarta: Maquinaria y gran industria - Acápite 5 Lucha entre el obrero y la máquina",
-            null,
-            null,
-            null,
-            urlsCapital,
-            "Universidad Nacional - Bloque 46 - Salón 114"
+        sesiones?.add(
+            Sesion(
+                1,
+                "Leer el Capital",
+                "Seminario",
+                "8:00 am",
+                "10:30 am",
+                "El Capital",
+                "Sección cuarta: Maquinaria y gran industria - Acápite 5 Lucha entre el obrero y la máquina",
+                null,
+                null,
+                null,
+                urlsCapital,
+                "Universidad Nacional - Bloque 46 - Salón 114"
             )
         )
-        sesiones?.add(Sesion(
-            "El Ser y el Lenguaje",
-            "Seminario",
-            "10:30 am",
-            "1 hora y media",
-            "Conferencias Caraqueñas",
-            "Elementos de epistemología",
-            "páginas",
-            null,
-            null,
-            urlsLenguaje,
-            "Universidad Nacional - Bloque 46 - Salón 114"
+        sesiones?.add(
+            Sesion(
+                2,
+                "El Ser y el Lenguaje",
+                "Seminario",
+                "10:30 am",
+                "12:00 m",
+                "Conferencias Caraqueñas",
+                "Elementos de epistemología",
+                "páginas",
+                null,
+                null,
+                urlsLenguaje,
+                "Universidad Nacional - Bloque 46 - Salón 114"
             )
         )
-        sesiones?.add(Sesion(
-            "El Quijote",
-            "Seminario",
-            "1:15 pm",
-            "2 horas",
-            "Segunda parte del Ingenioso Caballero Don Quijote de la Mancha",
-            "Capítulo XXXII De la respuesta que dio don Quijote a su reprehensor, con otros graves y graciosos sucesos.",
-            null,
-            expositoresQuijote,
-            null,
-            null,
-            "Universidad Nacional - Bloque 46 - Salón 114"
+        sesiones?.add(
+            Sesion(
+                3,
+                "El Quijote",
+                "Seminario",
+                "1:15 pm",
+                "3:15 pm",
+                "Segunda parte del Ingenioso Caballero Don Quijote de la Mancha",
+                "Capítulo XXXII De la respuesta que dio don Quijote a su reprehensor, con otros graves y graciosos sucesos.",
+                null,
+                expositoresQuijote,
+                null,
+                null,
+                "Universidad Nacional - Bloque 46 - Salón 114"
             )
         )
-        sesiones?.add(Sesion(
-            "Obra de Estanislao Zuleta",
-            "Grupo de Estudio",
-            "3:30 pm",
-            "1 hora y media",
-            "El pensamiento psicoanalítico",
-            "Capítulo 1 - Sobre la psicosis",
-            null,
-            null,
-            null,
-            null,
-            "Universidad Nacional - Bloque 46 - Salón 114"
+        sesiones?.add(
+            Sesion(
+                4,
+                "Obra de Estanislao Zuleta",
+                "Grupo de Estudio",
+                "3:30 pm",
+                "5:00 pm",
+                "El pensamiento psicoanalítico",
+                "Capítulo 1 - Sobre la psicosis",
+                null,
+                null,
+                null,
+                null,
+                "Universidad Nacional - Bloque 46 - Salón 114"
             )
         )
 
