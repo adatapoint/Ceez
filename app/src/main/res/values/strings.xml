@@ -2,5 +2,9 @@
     <string name="app_name">Ceez</string>
     <string name="agenda">Agenda</string>
     <string name="del">del</string>
-    <string name="space"/>
+    <string name="hora">Hora</string>
+    <string name="dos_puntos">:</string>
+    <string name="duracion">Duración</string>
+    <string name="texto">Texto</string>
+    <string name="apartado">Apartado</string>
 </resources>

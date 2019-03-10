@@ -22,6 +22,10 @@ class SesionAdapter (var items: ArrayList<Sesion>?): RecyclerView.Adapter<Sesion
         val item = items?.get(p1)
         holder.textViewNombre?.text = item?.nombre
         holder.textViewTipo?.text = item?.tipo
+        holder.textViewHora?.text = item?.hora
+        holder.textViewDuracion?.text = item?.duracion
+        holder.textViewTexto?.text = item?.texto
+        holder.textViewApartado?.text = item?.apartado
 
         holder.cardViewSesion?.setOnClickListener {
             Toast.makeText(it.context,"Item is clicked", Toast.LENGTH_SHORT).show()
@@ -33,11 +37,19 @@ class SesionAdapter (var items: ArrayList<Sesion>?): RecyclerView.Adapter<Sesion
         var cardViewSesion: CardView? = null
         var textViewNombre: TextView? = null
         var textViewTipo: TextView? = null
+        var textViewHora: TextView? = null
+        var textViewDuracion: TextView? = null
+        var textViewTexto: TextView? = null
+        var textViewApartado: TextView? = null
 
         init {
             this.cardViewSesion = view.cardViewSesion
             this.textViewNombre = view.textViewNombre
             this.textViewTipo = view.textViewTipo
+            this.textViewHora = view.textViewHora
+            this.textViewDuracion = view.textViewDuracion
+            this.textViewTexto = view.textViewTexto
+            this.textViewApartado = view.textViewApartado
         }
 
 
